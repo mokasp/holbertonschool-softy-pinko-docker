@@ -642,5 +642,20 @@ https://templatemo.com/tm-535-softy-pinko
     <!-- Global Init -->
     <script src="assets/js/custom.js"></script>
 
+        <!-- Added 11/6/23 -->
+        <script>
+            // Load dynamic data from the back-end on port 5252
+            $(function() {
+                $.ajax({
+                    type: "GET",
+                    url: "http://localhost:5252/api/hello",
+                    success: function(data) {
+                        console.log(data);
+                        $('#dynamic-content').text(data);
+                    }
+                });
+            });
+        </script>
+
   </body>
 </html>
