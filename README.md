@@ -25,13 +25,13 @@ This project uses Docker to deploy a simple front-end and back-end server connec
   <h5>Build</h5>
 
 ```
-  docker build -f ./Dockerfile -t softy-pinko:task1 .
+docker build -f ./Dockerfile -t softy-pinko:task1 .
 ```
 
   <h5>Run</h5>
 
 ```
-  docker run -it --rm --name softy-pinko-task1 softy-pinko:task1
+docker run -p 5252:5252 -it --rm --name softy-pinko-task1 softy-pinko:task1
 ```
 <h5>Check localhost:5252/api/hello</h5>
 
@@ -43,13 +43,13 @@ This project uses Docker to deploy a simple front-end and back-end server connec
   <h5>Build</h5>
 
 ```
-  docker build -f ./Dockerfile -t softy-pinko:task2 .
+docker build -f ./front-end/Dockerfile -t softy-pinko-front-end:task2 ./front-end
 ```
 
   <h5>Run</h5>
 
 ```
-  docker run -it --rm --name softy-pinko-task2 softy-pinko:task2
+docker run -p 9000:9000 -it --rm --name softy-pinko-front-end-task2 softy-pinko-front-end:task2
 ```
 <h5>Check localhost:9000</h5>
 
