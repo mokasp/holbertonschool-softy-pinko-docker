@@ -33,6 +33,9 @@ This project uses Docker to deploy a simple front-end and back-end server connec
 ```
   docker run -it --rm --name softy-pinko-task1 softy-pinko:task1
 ```
+<h5>Check localhost:5252/api/hello</h5>
+
+<a>http://localhost:5252/api/hello</a><br>
 
 </details>
 <details>
@@ -48,7 +51,9 @@ This project uses Docker to deploy a simple front-end and back-end server connec
 ```
   docker run -it --rm --name softy-pinko-task2 softy-pinko:task2
 ```
+<h5>Check localhost:9000</h5>
 
+<a>http://localhost:9000</a><br>
 </details>
 <details>
   <summary>Task3</summary>
@@ -63,6 +68,9 @@ This project uses Docker to deploy a simple front-end and back-end server connec
 ```
   docker run -p 5252:5252 -d -it --rm --name softy-pinko-back-end-task3 softy-pinko-back-end:task3
 ```
+<h5>Check localhost:5252/api/hello</h5>
+
+<a>http://localhost:5252/api/hello</a><br>
 
   <h5>Build Front End</h5>
 
@@ -75,6 +83,9 @@ This project uses Docker to deploy a simple front-end and back-end server connec
 ```
   docker run -p 9000:9000 -it --rm --name softy-pinko-front-end-task3 softy-pinko-front-end:task3
 ```
+<h5>Check localhost:9000</h5>
+
+<a>http://localhost:9000</a><br>
 </details>
 
 <details><summary>Task4</summary>
@@ -89,6 +100,12 @@ This project uses Docker to deploy a simple front-end and back-end server connec
 ```
   docker-compose up
 ```
+<h5>Check localhost:9000</h5>
+
+<a>http://localhost:9000</a><br>
+<h5>Check localhost:5252/api/hello</h5>
+
+<a>http://localhost:5252/api/hello</a><br>
 </details>
 
 <details><summary>Task5</summary>
@@ -103,6 +120,9 @@ This project uses Docker to deploy a simple front-end and back-end server connec
 ```
   docker-compose up
 ```
+<h5>Check localhost:80</h5>
+
+<a>http://localhost:80</a><br>
 </details>
 
 <details><summary>Task6</summary>
@@ -117,4 +137,7 @@ This project uses Docker to deploy a simple front-end and back-end server connec
 ```
   docker-compose up --scale back-end=2
 ```
+<h5>Check localhost:80</h5>
+
+<a>http://localhost:80</a><br>
 </details>
